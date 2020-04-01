@@ -3,6 +3,7 @@ ver_lhc_run = 0;
 ver_hllhc_optics = 1.4;
 
 ! Get the toolkit 
+option, -echo, warn,-info;
 call, file="/afs/cern.ch/eng/lhc/optics/HLLHCV1.4/toolkit/macro.madx";
 
 
