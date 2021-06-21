@@ -1,10 +1,10 @@
 ! Specify machine version
 ver_lhc_run = 0;
-ver_hllhc_optics = 1.4;
+ver_hllhc_optics = 1.5;
 
 ! Get the toolkit 
 option, -echo, warn,-info;
-call, file="/afs/cern.ch/eng/lhc/optics/HLLHCV1.4/toolkit/macro.madx";
+call, file="/afs/cern.ch/eng/lhc/optics/HLLHCV1.5/toolkit/macro.madx";
 
 
 ! Build sequence
@@ -17,7 +17,7 @@ if (mylhcbeam==4){
 option, -echo, warn,-info;
 
 !Install HL-LHC
-call, file="/afs/cern.ch/eng/lhc/optics/HLLHCV1.4/hllhc_sequence.madx";
+call, file="/afs/cern.ch/eng/lhc/optics/HLLHCV1.5/hllhc_sequence.madx";
 
 
 ! Slice nominal sequence
