@@ -3,6 +3,7 @@ ver_lhc_run = 3;
 ver_hllhc_optics = 0;
 
 ! Get the toolkit 
+option, -echo, warn,-info;
 call, file="/afs/cern.ch/eng/lhc/optics/runII/2018/toolkit/macro.madx";
 
 
@@ -21,7 +22,6 @@ call,file="/afs/cern.ch/eng/lhc/optics/runIII/RunIII_dev/IR7-Run3seqedit.madx"; 
 slicefactor=4;
 option rbarc=true;
 call, file = "/afs/cern.ch/eng/lhc/optics/runII/2018/toolkit/myslice.madx";
-
 
 beam; // a generic beam definitions 
 use, sequence=lhcb1;
